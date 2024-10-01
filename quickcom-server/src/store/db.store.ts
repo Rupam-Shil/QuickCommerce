@@ -9,5 +9,6 @@ const stats: AdminStats = {
 	totalDiscountAmount: 0,
 	discountCodesGenerated: [],
 };
+const adminUserIds: string[] = ['admin-1'];
 
-export { carts, orders, discountCodes, stats };
+export { carts, orders, discountCodes, stats, adminUserIds };

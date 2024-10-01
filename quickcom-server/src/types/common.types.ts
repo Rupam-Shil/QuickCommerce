@@ -18,10 +18,3 @@ export type DiscountCode = {
 	code: string;
 	isUsed: boolean;
 };
-
-export type AdminStats = {
-	totalItemsPurchased: number;
-	totalPurchaseAmount: number;
-	totalDiscountAmount: number;
-	discountCodesGenerated: string[];
-};
