@@ -12,5 +12,16 @@ const stats: AdminStats = {
 };
 const adminUserIds: string[] = ['admin-1'];
 const products: ProductItem[] = [];
+const orderDetails = {
+	orderCount: 0,
+};
 
-export { carts, orders, discountCodes, stats, adminUserIds, products };
+export {
+	carts,
+	orders,
+	discountCodes,
+	stats,
+	adminUserIds,
+	products,
+	orderDetails,
+};

@@ -17,6 +17,7 @@ export type Order = {
 export type DiscountCode = {
 	code: string;
 	isUsed: boolean;
+	userId?: string;
 };
 
 export type ProductItem = {

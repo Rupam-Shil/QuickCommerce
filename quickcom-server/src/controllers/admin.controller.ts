@@ -9,8 +9,13 @@ export const getAdminStats = (req: Request, res: Response) => {
 };
 
 export const getDiscountCode = (req: Request, res: Response) => {
+	const { linkToUserId } = req.body;
 	const code = generateDiscountCode();
-	discountCodes[code] = { code, isUsed: false };
+	discountCodes[code] = {
+		code,
+		isUsed: false,
+		...(linkToUserId && { userId: linkToUserId }),
+	};
 	stats.discountCodesGenerated.push(code);
 	res.status(200).json({
 		code,
