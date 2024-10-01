@@ -12,7 +12,6 @@ generateRoutes(server);
 (async () => {
 	try {
 		await fillInventory();
-		console.log('Inventory filled');
 	} catch (error) {
 		console.error('Failed to fill inventory', error);
 	}
@@ -20,3 +19,5 @@ generateRoutes(server);
 
 // start the server
 server.start();
+
+export default server.server;
