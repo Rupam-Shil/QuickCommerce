@@ -1,0 +1,23 @@
+{
+	"name": "quickcom-server",
+	"version": "1.0.0",
+	"description": "a Node.js Express server implementing a simple e-commerce store API",
+	"author": "Rupam Shil",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/server.js",
+		"dev": "nodemon src/server.ts"
+	},
+	"dependencies": {
+		"@types/node": "^22.7.4",
+		"express": "^4.21.0",
+		"nanoid": "^5.0.7",
+		"typescript": "^5.6.2"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.0",
+		"nodemon": "^3.1.7",
+		"ts-node": "^10.9.2"
+	}
+}
