@@ -30,7 +30,7 @@ export class AppServer {
 	 *
 	 * @param port The port number to listen on.
 	 */
-	start(port: number = 9000) {
+	start(port: number = 8000) {
 		this.server.listen(port, () => {
 			console.log(`Server listening on port ${port}`);
 		});
