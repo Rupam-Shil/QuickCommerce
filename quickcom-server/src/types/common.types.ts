@@ -18,3 +18,11 @@ export type DiscountCode = {
 	code: string;
 	isUsed: boolean;
 };
+
+export type ProductItem = {
+	itemId: string;
+	itemName: string;
+	price: number;
+	imageUrl: string;
+	description: string;
+};

@@ -1,9 +1,12 @@
-import { ROUTE_PREFIX } from '../constants/config.contants';
+import { ROUTE_PREFIX } from '../constants/config.constants';
 import { AppServer } from '../utils/app.utils';
 import AdminRouter from './admin.route';
-
+import CartRouter from './cart.route';
+import ProductRouter from './product.route';
 const routeMap = {
 	admin: AdminRouter,
+	cart: CartRouter,
+	product: ProductRouter,
 };
 
 /**

@@ -1,9 +1,20 @@
 import { Response, Request } from 'express';
-import { adminUserIds, stats } from '../store/db.store';
+import { adminUserIds, discountCodes, stats } from '../store/db.store';
+import { generateDiscountCode } from '../utils/helpers.utils';
 
 export const getAdminStats = (req: Request, res: Response) => {
 	res.status(200).json({
 		...stats,
+	});
+};
+
+export const getDiscountCode = (req: Request, res: Response) => {
+	const code = generateDiscountCode();
+	discountCodes[code] = { code, isUsed: false };
+	stats.discountCodesGenerated.push(code);
+	res.status(200).json({
+		code,
+		message: 'Discount code generated successfully',
 	});
 };
 

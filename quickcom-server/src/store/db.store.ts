@@ -1,3 +1,4 @@
+import { ProductItem } from '../types/common.types';
 import { AdminStats, Carts, DiscountCodes, Orders } from '../types/model.types';
 
 const carts: Carts = {};
@@ -10,5 +11,6 @@ const stats: AdminStats = {
 	discountCodesGenerated: [],
 };
 const adminUserIds: string[] = ['admin-1'];
+const products: ProductItem[] = [];
 
-export { carts, orders, discountCodes, stats, adminUserIds };
+export { carts, orders, discountCodes, stats, adminUserIds, products };
