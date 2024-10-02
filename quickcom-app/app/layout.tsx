@@ -1,3 +1,4 @@
+import Navbar from '@/components/navbar/NavBar';
 import '@/styles/globals.scss';
 
 export default function RootLayout({
@@ -7,7 +8,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body className="overflow-x-hidden">
+				<Navbar />
+				{children}
+			</body>
 		</html>
 	);
 }
