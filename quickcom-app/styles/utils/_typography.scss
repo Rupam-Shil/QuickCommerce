@@ -1,0 +1,146 @@
+.base-text-properties {
+	line-height: 150%;
+}
+
+.text-3xl {
+	font-size: 38px;
+	@extend .base-text-properties;
+}
+.text-2xl {
+	font-size: 24px;
+	@extend .base-text-properties;
+}
+.text-xl {
+	font-size: 20px;
+	@extend .base-text-properties;
+}
+.text-lg {
+	font-size: 18px;
+	@extend .base-text-properties;
+}
+.text-base {
+	font-size: 16px;
+	@extend .base-text-properties;
+}
+.text-sm {
+	font-size: 14px;
+	@extend .base-text-properties;
+}
+.text-xs {
+	font-size: 12px;
+	@extend .base-text-properties;
+}
+
+.text-lh-24 {
+	line-height: 24px;
+}
+// weight
+.font-thin {
+	font-weight: 100;
+	line-height: 150%;
+}
+
+.font-light {
+	font-weight: 300;
+	line-height: 150%;
+}
+
+.font-normal {
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.font-medium {
+	font-weight: 500;
+	line-height: 150%;
+}
+
+.font-semibold {
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.font-bold {
+	font-weight: 700;
+	line-height: 150%;
+}
+
+.font-extrabold {
+	font-weight: 800;
+	line-height: 150%;
+}
+
+.font-black {
+	font-weight: 900;
+	line-height: 150%;
+}
+
+// line height
+.leading-none {
+	line-height: 1;
+}
+
+.leading-tight {
+	line-height: 1.25;
+}
+
+.leading-snug {
+	line-height: 1.375;
+}
+
+.leading-normal {
+	line-height: 1.5;
+}
+
+.leading-relaxed {
+	line-height: 1.625;
+}
+
+.leading-loose {
+	line-height: 2;
+}
+
+.leading-3 {
+	line-height: 12px;
+}
+
+.leading-4 {
+	line-height: 16px;
+}
+
+.leading-5 {
+	line-height: 20px;
+}
+
+.leading-6 {
+	line-height: 24px;
+}
+
+.leading-7 {
+	line-height: 28px;
+}
+
+.leading-8 {
+	line-height: 32px;
+}
+
+.leading-9 {
+	line-height: 36px;
+}
+
+.leading-10 {
+	line-height: 40px;
+}
+// decoration
+.underline {
+	text-decoration: underline;
+}
+.decor-none {
+	text-decoration: none;
+}
+.italic {
+	font-style: italic;
+}
+.strike {
+	text-decoration: line-through;
+}
